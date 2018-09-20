@@ -1,0 +1,4 @@
+# Dependencies with Carthage
+github "Alamofire/Alamofire" ~> 4.7
+github "tristanhimmelman/AlamofireObjectMapper" ~> 5.0
+github "Alamofire/AlamofireImage" ~> 3.4

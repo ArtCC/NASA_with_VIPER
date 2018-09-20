@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB867C65214AD497004A3C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C64214AD497004A3C4D /* AppDelegate.swift */; };
+		CB867C67214AD497004A3C4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C66214AD497004A3C4D /* ViewController.swift */; };
+		CB867C6A214AD497004A3C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB867C68214AD497004A3C4D /* Main.storyboard */; };
+		CB867C6C214AD498004A3C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB867C6B214AD498004A3C4D /* Assets.xcassets */; };
+		CB867C6F214AD498004A3C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB867C6D214AD498004A3C4D /* LaunchScreen.storyboard */; };
+		CB867C7A214AD498004A3C4D /* NASA_with_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C79214AD498004A3C4D /* NASA_with_VIPERTests.swift */; };
+		CB867C85214AD498004A3C4D /* NASA_with_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C84214AD498004A3C4D /* NASA_with_VIPERUITests.swift */; };
+		CBE2722A214C31B200943305 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27226214C31B200943305 /* AlamofireImage.framework */; };
+		CBE2722B214C31B200943305 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27227214C31B200943305 /* Alamofire.framework */; };
+		CBE2722C214C31B200943305 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27228214C31B200943305 /* ObjectMapper.framework */; };
+		CBE2722D214C31B200943305 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27229214C31B200943305 /* AlamofireObjectMapper.framework */; };
+		CBE2722F214C31BC00943305 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27227214C31B200943305 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE27231214C31BC00943305 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27226214C31B200943305 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE27233214C31BC00943305 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27229214C31B200943305 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBE27235214C31BC00943305 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27228214C31B200943305 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB867C76214AD498004A3C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB867C59214AD497004A3C4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB867C60214AD497004A3C4D;
+			remoteInfo = "NASA-with-VIPER";
+		};
+		CB867C81214AD498004A3C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB867C59214AD497004A3C4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB867C60214AD497004A3C4D;
+			remoteInfo = "NASA-with-VIPER";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB0BD2DD214C2B67003F48C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBE2722F214C31BC00943305 /* Alamofire.framework in Embed Frameworks */,
+				CBE27233214C31BC00943305 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				CBE27235214C31BC00943305 /* ObjectMapper.framework in Embed Frameworks */,
+				CBE27231214C31BC00943305 /* AlamofireImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB867C61214AD497004A3C4D /* NASA-with-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA-with-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB867C64214AD497004A3C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB867C66214AD497004A3C4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB867C69214AD497004A3C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB867C6B214AD498004A3C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB867C6E214AD498004A3C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB867C70214AD498004A3C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB867C75214AD498004A3C4D /* NASA-with-VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA-with-VIPERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB867C79214AD498004A3C4D /* NASA_with_VIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_with_VIPERTests.swift; sourceTree = "<group>"; };
+		CB867C7B214AD498004A3C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB867C80214AD498004A3C4D /* NASA-with-VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA-with-VIPERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB867C84214AD498004A3C4D /* NASA_with_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_with_VIPERUITests.swift; sourceTree = "<group>"; };
+		CB867C86214AD498004A3C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE27226214C31B200943305 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		CBE27227214C31B200943305 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CBE27228214C31B200943305 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		CBE27229214C31B200943305 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB867C5E214AD497004A3C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE2722C214C31B200943305 /* ObjectMapper.framework in Frameworks */,
+				CBE2722A214C31B200943305 /* AlamofireImage.framework in Frameworks */,
+				CBE2722B214C31B200943305 /* Alamofire.framework in Frameworks */,
+				CBE2722D214C31B200943305 /* AlamofireObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB867C72214AD498004A3C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB867C7D214AD498004A3C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB0BD2D3214C2B21003F48C5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CB867C6D214AD498004A3C4D /* LaunchScreen.storyboard */,
+				CB867C68214AD497004A3C4D /* Main.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		CB0BD2D4214C2B3B003F48C5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CB867C66214AD497004A3C4D /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CB867C58214AD497004A3C4D = {
+			isa = PBXGroup;
+			children = (
+				CB867C63214AD497004A3C4D /* NASA-with-VIPER */,
+				CB867C78214AD498004A3C4D /* NASA-with-VIPERTests */,
+				CB867C83214AD498004A3C4D /* NASA-with-VIPERUITests */,
+				CB867C62214AD497004A3C4D /* Products */,
+				CBE27227214C31B200943305 /* Alamofire.framework */,
+				CBE27226214C31B200943305 /* AlamofireImage.framework */,
+				CBE27229214C31B200943305 /* AlamofireObjectMapper.framework */,
+				CBE27228214C31B200943305 /* ObjectMapper.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		CB867C62214AD497004A3C4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB867C61214AD497004A3C4D /* NASA-with-VIPER.app */,
+				CB867C75214AD498004A3C4D /* NASA-with-VIPERTests.xctest */,
+				CB867C80214AD498004A3C4D /* NASA-with-VIPERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB867C63214AD497004A3C4D /* NASA-with-VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				CB0BD2D3214C2B21003F48C5 /* Interfaces */,
+				CB0BD2D4214C2B3B003F48C5 /* Scenes */,
+				CB867C64214AD497004A3C4D /* AppDelegate.swift */,
+				CB867C6B214AD498004A3C4D /* Assets.xcassets */,
+				CB867C70214AD498004A3C4D /* Info.plist */,
+			);
+			path = "NASA-with-VIPER";
+			sourceTree = "<group>";
+		};
+		CB867C78214AD498004A3C4D /* NASA-with-VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB867C7B214AD498004A3C4D /* Info.plist */,
+				CB867C79214AD498004A3C4D /* NASA_with_VIPERTests.swift */,
+			);
+			path = "NASA-with-VIPERTests";
+			sourceTree = "<group>";
+		};
+		CB867C83214AD498004A3C4D /* NASA-with-VIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB867C86214AD498004A3C4D /* Info.plist */,
+				CB867C84214AD498004A3C4D /* NASA_with_VIPERUITests.swift */,
+			);
+			path = "NASA-with-VIPERUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB867C60214AD497004A3C4D /* NASA-with-VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB867C89214AD498004A3C4D /* Build configuration list for PBXNativeTarget "NASA-with-VIPER" */;
+			buildPhases = (
+				CB867C5D214AD497004A3C4D /* Sources */,
+				CB867C5E214AD497004A3C4D /* Frameworks */,
+				CB867C5F214AD497004A3C4D /* Resources */,
+				CB0BD2DD214C2B67003F48C5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NASA-with-VIPER";
+			productName = "NASA-with-VIPER";
+			productReference = CB867C61214AD497004A3C4D /* NASA-with-VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB867C74214AD498004A3C4D /* NASA-with-VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB867C8C214AD498004A3C4D /* Build configuration list for PBXNativeTarget "NASA-with-VIPERTests" */;
+			buildPhases = (
+				CB867C71214AD498004A3C4D /* Sources */,
+				CB867C72214AD498004A3C4D /* Frameworks */,
+				CB867C73214AD498004A3C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB867C77214AD498004A3C4D /* PBXTargetDependency */,
+			);
+			name = "NASA-with-VIPERTests";
+			productName = "NASA-with-VIPERTests";
+			productReference = CB867C75214AD498004A3C4D /* NASA-with-VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB867C7F214AD498004A3C4D /* NASA-with-VIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB867C8F214AD498004A3C4D /* Build configuration list for PBXNativeTarget "NASA-with-VIPERUITests" */;
+			buildPhases = (
+				CB867C7C214AD498004A3C4D /* Sources */,
+				CB867C7D214AD498004A3C4D /* Frameworks */,
+				CB867C7E214AD498004A3C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB867C82214AD498004A3C4D /* PBXTargetDependency */,
+			);
+			name = "NASA-with-VIPERUITests";
+			productName = "NASA-with-VIPERUITests";
+			productReference = CB867C80214AD498004A3C4D /* NASA-with-VIPERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB867C59214AD497004A3C4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Arturo Carretero Calvo";
+				TargetAttributes = {
+					CB867C60214AD497004A3C4D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CB867C74214AD498004A3C4D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CB867C60214AD497004A3C4D;
+					};
+					CB867C7F214AD498004A3C4D = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CB867C60214AD497004A3C4D;
+					};
+				};
+			};
+			buildConfigurationList = CB867C5C214AD497004A3C4D /* Build configuration list for PBXProject "NASA-with-VIPER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB867C58214AD497004A3C4D;
+			productRefGroup = CB867C62214AD497004A3C4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB867C60214AD497004A3C4D /* NASA-with-VIPER */,
+				CB867C74214AD498004A3C4D /* NASA-with-VIPERTests */,
+				CB867C7F214AD498004A3C4D /* NASA-with-VIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB867C5F214AD497004A3C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB867C6F214AD498004A3C4D /* LaunchScreen.storyboard in Resources */,
+				CB867C6C214AD498004A3C4D /* Assets.xcassets in Resources */,
+				CB867C6A214AD497004A3C4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB867C73214AD498004A3C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB867C7E214AD498004A3C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB867C5D214AD497004A3C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB867C67214AD497004A3C4D /* ViewController.swift in Sources */,
+				CB867C65214AD497004A3C4D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB867C71214AD498004A3C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB867C7A214AD498004A3C4D /* NASA_with_VIPERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB867C7C214AD498004A3C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB867C85214AD498004A3C4D /* NASA_with_VIPERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB867C77214AD498004A3C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB867C60214AD497004A3C4D /* NASA-with-VIPER */;
+			targetProxy = CB867C76214AD498004A3C4D /* PBXContainerItemProxy */;
+		};
+		CB867C82214AD498004A3C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB867C60214AD497004A3C4D /* NASA-with-VIPER */;
+			targetProxy = CB867C81214AD498004A3C4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB867C68214AD497004A3C4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB867C69214AD497004A3C4D /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		CB867C6D214AD498004A3C4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB867C6E214AD498004A3C4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB867C87214AD498004A3C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB867C88214AD498004A3C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB867C8A214AD498004A3C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "NASA-with-VIPER/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artcc.NASA-with-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB867C8B214AD498004A3C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "NASA-with-VIPER/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artcc.NASA-with-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB867C8D214AD498004A3C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NASA-with-VIPERTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artcc.NASA-with-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASA-with-VIPER.app/NASA-with-VIPER";
+			};
+			name = Debug;
+		};
+		CB867C8E214AD498004A3C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NASA-with-VIPERTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artcc.NASA-with-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASA-with-VIPER.app/NASA-with-VIPER";
+			};
+			name = Release;
+		};
+		CB867C90214AD498004A3C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NASA-with-VIPERUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artcc.NASA-with-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NASA-with-VIPER";
+			};
+			name = Debug;
+		};
+		CB867C91214AD498004A3C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NASA-with-VIPERUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artcc.NASA-with-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NASA-with-VIPER";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB867C5C214AD497004A3C4D /* Build configuration list for PBXProject "NASA-with-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB867C87214AD498004A3C4D /* Debug */,
+				CB867C88214AD498004A3C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB867C89214AD498004A3C4D /* Build configuration list for PBXNativeTarget "NASA-with-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB867C8A214AD498004A3C4D /* Debug */,
+				CB867C8B214AD498004A3C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB867C8C214AD498004A3C4D /* Build configuration list for PBXNativeTarget "NASA-with-VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB867C8D214AD498004A3C4D /* Debug */,
+				CB867C8E214AD498004A3C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB867C8F214AD498004A3C4D /* Build configuration list for PBXNativeTarget "NASA-with-VIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB867C90214AD498004A3C4D /* Debug */,
+				CB867C91214AD498004A3C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB867C59214AD497004A3C4D /* Project object */;
+}
