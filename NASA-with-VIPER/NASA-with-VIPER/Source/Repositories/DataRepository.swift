@@ -10,20 +10,29 @@ import UIKit
 import Alamofire
 import AlamofireObjectMapper
 
+// MARK: - PROTOCOLS
+
 protocol DataRepositoryInputProtocol: class {
     var dataRequestHandler: DataRepositoryOutputProtocol? { get set }
+    
+    // Input functions from interactor to repository
     
     func getImagesList()
 }
 
 protocol DataRepositoryOutputProtocol: class {
+    // Output functions from repository to interactor
+    
     func onError()
 }
+
+// MARK: - CLASS
 
 class DataRepository: DataRepositoryInputProtocol {
     var dataRequestHandler: DataRepositoryOutputProtocol?
     
+    // Implementations for input functions from interactor to repository
+    
     func getImagesList() {
-        
     }
 }

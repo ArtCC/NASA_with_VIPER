@@ -8,9 +8,15 @@
 
 import UIKit
 
+// MARK: - PROTOCOLS
+
 protocol ListViewControllerInputProtocol: class {
+    // Input functions from presenter to view
+
     var presenter: ListPresenterInputProtocol? { get set }
 }
+
+// MARK: - CLASS
 
 class ListViewController: UIViewController {
     // MARK: - Properties
@@ -27,4 +33,5 @@ class ListViewController: UIViewController {
 }
 
 extension ListViewController: ListViewControllerInputProtocol {
+    // Implementations for input functions from presenter to view
 }

@@ -8,21 +8,33 @@
 
 import UIKit
 
+// MARK: - PROTOCOLS
+
 protocol ImagesInteractorInputProtocol: class {
+    // Input functions from presenter to interactor
+
     var presenter: ImagesInteractorOutputProtocol? { get set}
     var dataRepository: DataRepositoryInputProtocol? { get set}
 }
 
 protocol ImagesInteractorOutputProtocol: class {
+    // Output functions from interactor to presenter
+    
     func onError()
 }
 
+// MARK: - CLASS
+
 class ImagesInteractor: ImagesInteractorInputProtocol {
     weak var presenter: ImagesInteractorOutputProtocol?
-    var dataRepository: DataRepositoryInputProtocol?    
+    var dataRepository: DataRepositoryInputProtocol?
+    
+    // Implementations for input functions from presenter to interactor
 }
 
 extension ImagesInteractor: DataRepositoryOutputProtocol {
+    // Implementations for output functions from repository to interactor
+    
     func onError() {
     }
 }

@@ -8,13 +8,21 @@
 
 import UIKit
 
+// MARK: - PROTOCOLS
+
 protocol ListWireFrameInputProtocol: class {
+    // Input functions from presenter to wireframe
+
     static func createListModule() -> UIViewController
 }
 
+// MARK: - CLASS
+
 class ListWireFrame: ListWireFrameInputProtocol {
+    // Implementations for input functions from presenter to wireframe
+
     class func createListModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "NavigationListViewController")
+        let navController = Utils.mainStoryboard.instantiateViewController(withIdentifier: "NavigationListViewController")
         
         if let view = navController.childViewControllers.first as? ListViewController {
             
@@ -35,10 +43,5 @@ class ListWireFrame: ListWireFrameInputProtocol {
         }
         
         return UIViewController()
-    }
-    
-    static var mainStoryboard: UIStoryboard {
-        
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
 }

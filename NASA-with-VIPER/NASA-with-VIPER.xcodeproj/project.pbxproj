@@ -21,6 +21,8 @@
 		CB39E9BF21626725006DF2E8 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9BE21626725006DF2E8 /* APIConstants.swift */; };
 		CB39E9C2216268CF006DF2E8 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C1216268CF006DF2E8 /* DataRepository.swift */; };
 		CB39E9C4216268E9006DF2E8 /* ImagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C3216268E9006DF2E8 /* ImagesInteractor.swift */; };
+		CB39E9C721627668006DF2E8 /* NASAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C621627668006DF2E8 /* NASAImage.swift */; };
+		CB39E9C9216279D6006DF2E8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C8216279D6006DF2E8 /* Utils.swift */; };
 		CB867C65214AD497004A3C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C64214AD497004A3C4D /* AppDelegate.swift */; };
 		CB867C67214AD497004A3C4D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C66214AD497004A3C4D /* ListViewController.swift */; };
 		CB867C6A214AD497004A3C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB867C68214AD497004A3C4D /* Main.storyboard */; };
@@ -76,6 +78,8 @@
 		CB39E9BE21626725006DF2E8 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		CB39E9C1216268CF006DF2E8 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		CB39E9C3216268E9006DF2E8 /* ImagesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesInteractor.swift; sourceTree = "<group>"; };
+		CB39E9C621627668006DF2E8 /* NASAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAImage.swift; sourceTree = "<group>"; };
+		CB39E9C8216279D6006DF2E8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CB867C61214AD497004A3C4D /* NASA-with-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA-with-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB867C64214AD497004A3C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB867C66214AD497004A3C4D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				CB39E9BB2162670E006DF2E8 /* Constants.swift */,
+				CB39E9C8216279D6006DF2E8 /* Utils.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 		CB39E9C521626D8B006DF2E8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CB39E9C621627668006DF2E8 /* NASAImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -450,6 +456,8 @@
 				CB39E9C4216268E9006DF2E8 /* ImagesInteractor.swift in Sources */,
 				CB39E9BF21626725006DF2E8 /* APIConstants.swift in Sources */,
 				CB867C67214AD497004A3C4D /* ListViewController.swift in Sources */,
+				CB39E9C9216279D6006DF2E8 /* Utils.swift in Sources */,
+				CB39E9C721627668006DF2E8 /* NASAImage.swift in Sources */,
 				CB39E9B7216266F2006DF2E8 /* ListPresenter.swift in Sources */,
 				CB867C65214AD497004A3C4D /* AppDelegate.swift in Sources */,
 				CB39E9C2216268CF006DF2E8 /* DataRepository.swift in Sources */,
