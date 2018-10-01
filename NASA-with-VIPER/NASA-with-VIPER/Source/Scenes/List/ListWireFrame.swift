@@ -44,4 +44,13 @@ class ListWireFrame: ListWireFrameInputProtocol {
         
         return UIViewController()
     }
+    
+    func openDetailImage(from view: ListViewControllerInputProtocol, image: NASAImage) {
+        let detailViewController = DetailWireFrame.createDetailModule(withImage: image)
+        
+        if let sourceView = view as? UIViewController {
+            
+            sourceView.navigationController?.pushViewController(detailViewController, animated: true)
+        }
+    }
 }

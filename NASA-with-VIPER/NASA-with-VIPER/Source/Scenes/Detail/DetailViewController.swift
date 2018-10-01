@@ -1,8 +1,8 @@
 //
-//  ListViewController.swift
+//  DetailViewController.swift
 //  NASA-with-VIPER
 //
-//  Created by Arturo Carretero Calvo on 13/9/18.
+//  Created by Arturo Carretero Calvo on 01/10/2018.
 //  Copyright © 2018 Arturo Carretero Calvo. All rights reserved.
 //
 
@@ -10,18 +10,18 @@ import UIKit
 
 // MARK: - PROTOCOLS
 
-protocol ListViewControllerInputProtocol: class {
+protocol DetailViewControllerInputProtocol: class {
     // Input functions from presenter to view
-
-    var presenter: ListPresenterInputProtocol? { get set }
+    
+    var presenter: DetailPresenterInputProtocol? { get set }
 }
 
 // MARK: - CLASS
 
-class ListViewController: UIViewController {
+class DetailViewController: UIViewController {
     // MARK: - Properties
     
-    var presenter: ListPresenterInputProtocol?
+    var presenter: DetailPresenterInputProtocol?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -34,6 +34,6 @@ class ListViewController: UIViewController {
     }
 }
 
-extension ListViewController: ListViewControllerInputProtocol {
+extension DetailViewController: DetailViewControllerInputProtocol {
     // Implementations for input functions from presenter to view
 }
