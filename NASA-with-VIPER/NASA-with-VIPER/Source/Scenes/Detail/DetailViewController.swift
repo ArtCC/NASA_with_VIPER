@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - PROTOCOLS
+// MARK: - Protocols
 
 protocol DetailViewControllerInputProtocol: class {
     // Input functions from presenter to view
@@ -16,7 +16,7 @@ protocol DetailViewControllerInputProtocol: class {
     var presenter: DetailPresenterInputProtocol? { get set }
 }
 
-// MARK: - CLASS
+// MARK: - Class
 
 class DetailViewController: UIViewController {
     // MARK: - Properties

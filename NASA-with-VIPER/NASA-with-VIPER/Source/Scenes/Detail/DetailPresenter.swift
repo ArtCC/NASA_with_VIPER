@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - PROTOCOLS
+// MARK: - Protocols
 
 protocol DetailPresenterInputProtocol: class {
     // Input functions from view to presenter
@@ -20,7 +20,7 @@ protocol DetailPresenterInputProtocol: class {
     func viewDidLoad()
 }
 
-// MARK: - CLASS
+// MARK: - Class
 
 class DetailPresenter: DetailPresenterInputProtocol {
     weak var view: DetailViewControllerInputProtocol?

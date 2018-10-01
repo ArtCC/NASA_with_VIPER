@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - PROTOCOLS
+// MARK: - Protocols
 
 protocol ListWireFrameInputProtocol: class {
     // Input functions from presenter to wireframe
@@ -16,7 +16,7 @@ protocol ListWireFrameInputProtocol: class {
     static func createListModule() -> UIViewController
 }
 
-// MARK: - CLASS
+// MARK: - Class
 
 class ListWireFrame: ListWireFrameInputProtocol {
     // Implementations for input functions from presenter to wireframe

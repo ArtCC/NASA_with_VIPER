@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - PROTOCOLS
+// MARK: - Protocols
 
 protocol DetailWireFrameInputProtocol: class {
     // Input functions from presenter to wireframe
@@ -16,7 +16,7 @@ protocol DetailWireFrameInputProtocol: class {
     static func createDetailModule(withImage image: NASAImage) -> UIViewController
 }
 
-// MARK: - CLASS
+// MARK: - Class
 
 class DetailWireFrame: DetailWireFrameInputProtocol {
     // Implementations for input functions from presenter to wireframe

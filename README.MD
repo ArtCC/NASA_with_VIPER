@@ -1,6 +1,8 @@
 ## Architecting iOS and macOS Apps with VIPER (application of Clean Architecture) with NASA Open APIs
 
-#### For this project I use NASA Open APIs: [NASA Open APIs site](https://api.nasa.gov/index.html)
+#### This project is in progress...
+
+#### For this project I use NASA Open APIs: [NASA Open APIs site](https://api.nasa.gov/index.html). You can create one :)
 
 This project is an example of VIPER architecture on iOS app with Swift.
 

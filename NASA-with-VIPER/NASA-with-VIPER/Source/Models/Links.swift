@@ -1,5 +1,5 @@
 //
-//  NASAImage.swift
+//  Links.swift
 //  NASA-with-VIPER
 //
 //  Created by Arturo Carretero Calvo on 01/10/2018.
@@ -9,11 +9,11 @@
 import UIKit
 import ObjectMapper
 
-class NASAImage: Mappable {
+class Links: Mappable {
     // MARK: - Properties
     
-    var links: [Links]?
-    var dataCollection: [DataInfo]?
+    var render: String?
+    var rel: String?
     var href: String?
     
     // MARK: - Init
@@ -27,8 +27,8 @@ class NASAImage: Mappable {
     // MARK: - Mapping
     
     func mapping(map: Map) {
-        links <- map["links"]
-        dataCollection <- map["data"]
+        render <- map["render"]
+        rel <- map["rel"]
         href <- map["href"]
     }
 }

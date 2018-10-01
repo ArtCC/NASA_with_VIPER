@@ -9,5 +9,5 @@
 import UIKit
 
 struct APIConstants {
-    static let nasaAPIKey: String = ""
+    static let urlForSearch: String = "https://images-api.nasa.gov/search"
 }

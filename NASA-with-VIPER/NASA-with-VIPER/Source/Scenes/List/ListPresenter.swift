@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - PROTOCOLS
+// MARK: - Protocols
 
 protocol ListPresenterInputProtocol: class {
     // Input functions from view to presenter
@@ -20,7 +20,7 @@ protocol ListPresenterInputProtocol: class {
     func viewDidLoad()
 }
 
-// MARK: - CLASS
+// MARK: - Class
 
 class ListPresenter: ListPresenterInputProtocol {
     weak var view: ListViewControllerInputProtocol?
@@ -28,12 +28,18 @@ class ListPresenter: ListPresenterInputProtocol {
     var wireFrame: ListWireFrameInputProtocol?
     
     func viewDidLoad() {
+        self.imagesInteractor?.findImagesList()
     }
 }
 
 extension ListPresenter: ImagesInteractorOutputProtocol {
     // Implementations for input functions from interactor to presenter
 
+    func foundImagesList(images: [NASAImage]) {
+        debugPrint("IMAGES COUNT: \(images.count)")
+    }
+    
     func onError() {
+        debugPrint("ListPresenter:onError")
     }
 }
