@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB01690B21625C3F007E7312 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690421625C36007E7312 /* Alamofire.framework */; };
+		CB01690C21625C3F007E7312 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690421625C36007E7312 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB01690D21625C3F007E7312 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690521625C36007E7312 /* AlamofireImage.framework */; };
+		CB01690E21625C3F007E7312 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690521625C36007E7312 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB01690F21625C3F007E7312 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690321625C36007E7312 /* AlamofireObjectMapper.framework */; };
+		CB01691021625C3F007E7312 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690321625C36007E7312 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB01691121625C3F007E7312 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690621625C36007E7312 /* ObjectMapper.framework */; };
+		CB01691221625C3F007E7312 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690621625C36007E7312 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB867C65214AD497004A3C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C64214AD497004A3C4D /* AppDelegate.swift */; };
 		CB867C67214AD497004A3C4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C66214AD497004A3C4D /* ViewController.swift */; };
 		CB867C6A214AD497004A3C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB867C68214AD497004A3C4D /* Main.storyboard */; };
@@ -14,14 +22,7 @@
 		CB867C6F214AD498004A3C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB867C6D214AD498004A3C4D /* LaunchScreen.storyboard */; };
 		CB867C7A214AD498004A3C4D /* NASA_with_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C79214AD498004A3C4D /* NASA_with_VIPERTests.swift */; };
 		CB867C85214AD498004A3C4D /* NASA_with_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C84214AD498004A3C4D /* NASA_with_VIPERUITests.swift */; };
-		CBE2722A214C31B200943305 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27226214C31B200943305 /* AlamofireImage.framework */; };
-		CBE2722B214C31B200943305 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27227214C31B200943305 /* Alamofire.framework */; };
-		CBE2722C214C31B200943305 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27228214C31B200943305 /* ObjectMapper.framework */; };
-		CBE2722D214C31B200943305 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27229214C31B200943305 /* AlamofireObjectMapper.framework */; };
-		CBE2722F214C31BC00943305 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27227214C31B200943305 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CBE27231214C31BC00943305 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27226214C31B200943305 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CBE27233214C31BC00943305 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27229214C31B200943305 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CBE27235214C31BC00943305 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBE27228214C31B200943305 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB8F02BE21625A61006BC22A /* Frameworks.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB8F02BD21625A61006BC22A /* Frameworks.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +49,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CBE2722F214C31BC00943305 /* Alamofire.framework in Embed Frameworks */,
-				CBE27233214C31BC00943305 /* AlamofireObjectMapper.framework in Embed Frameworks */,
-				CBE27235214C31BC00943305 /* ObjectMapper.framework in Embed Frameworks */,
-				CBE27231214C31BC00943305 /* AlamofireImage.framework in Embed Frameworks */,
+				CB01690C21625C3F007E7312 /* Alamofire.framework in Embed Frameworks */,
+				CB01691021625C3F007E7312 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				CB01691221625C3F007E7312 /* ObjectMapper.framework in Embed Frameworks */,
+				CB01690E21625C3F007E7312 /* AlamofireImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +60,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB01690321625C36007E7312 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		CB01690421625C36007E7312 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		CB01690521625C36007E7312 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
+		CB01690621625C36007E7312 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
 		CB867C61214AD497004A3C4D /* NASA-with-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA-with-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB867C64214AD497004A3C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB867C66214AD497004A3C4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,10 +77,7 @@
 		CB867C80214AD498004A3C4D /* NASA-with-VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA-with-VIPERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB867C84214AD498004A3C4D /* NASA_with_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_with_VIPERUITests.swift; sourceTree = "<group>"; };
 		CB867C86214AD498004A3C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBE27226214C31B200943305 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
-		CBE27227214C31B200943305 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		CBE27228214C31B200943305 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		CBE27229214C31B200943305 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		CB8F02BD21625A61006BC22A /* Frameworks.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Frameworks.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE2722C214C31B200943305 /* ObjectMapper.framework in Frameworks */,
-				CBE2722A214C31B200943305 /* AlamofireImage.framework in Frameworks */,
-				CBE2722B214C31B200943305 /* Alamofire.framework in Frameworks */,
-				CBE2722D214C31B200943305 /* AlamofireObjectMapper.framework in Frameworks */,
+				CB01690B21625C3F007E7312 /* Alamofire.framework in Frameworks */,
+				CB01690F21625C3F007E7312 /* AlamofireObjectMapper.framework in Frameworks */,
+				CB01691121625C3F007E7312 /* ObjectMapper.framework in Frameworks */,
+				CB01690D21625C3F007E7312 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,10 +133,6 @@
 				CB867C78214AD498004A3C4D /* NASA-with-VIPERTests */,
 				CB867C83214AD498004A3C4D /* NASA-with-VIPERUITests */,
 				CB867C62214AD497004A3C4D /* Products */,
-				CBE27227214C31B200943305 /* Alamofire.framework */,
-				CBE27226214C31B200943305 /* AlamofireImage.framework */,
-				CBE27229214C31B200943305 /* AlamofireObjectMapper.framework */,
-				CBE27228214C31B200943305 /* ObjectMapper.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,10 +149,10 @@
 		CB867C63214AD497004A3C4D /* NASA-with-VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				CB8F02BF21625A78006BC22A /* Artwork */,
+				CB8F02B921625A21006BC22A /* Frameworks */,
 				CB0BD2D3214C2B21003F48C5 /* Interfaces */,
-				CB0BD2D4214C2B3B003F48C5 /* Scenes */,
-				CB867C64214AD497004A3C4D /* AppDelegate.swift */,
-				CB867C6B214AD498004A3C4D /* Assets.xcassets */,
+				CB8F02BA21625A31006BC22A /* Source */,
 				CB867C70214AD498004A3C4D /* Info.plist */,
 			);
 			path = "NASA-with-VIPER";
@@ -178,6 +176,43 @@
 			path = "NASA-with-VIPERUITests";
 			sourceTree = "<group>";
 		};
+		CB8F02B921625A21006BC22A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB01690421625C36007E7312 /* Alamofire.framework */,
+				CB01690521625C36007E7312 /* AlamofireImage.framework */,
+				CB01690321625C36007E7312 /* AlamofireObjectMapper.framework */,
+				CB01690621625C36007E7312 /* ObjectMapper.framework */,
+				CB8F02BD21625A61006BC22A /* Frameworks.txt */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8F02BA21625A31006BC22A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CB8F02BB21625A37006BC22A /* AppDelegate */,
+				CB0BD2D4214C2B3B003F48C5 /* Scenes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CB8F02BB21625A37006BC22A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CB867C64214AD497004A3C4D /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CB8F02BF21625A78006BC22A /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				CB867C6B214AD498004A3C4D /* Assets.xcassets */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +224,8 @@
 				CB867C5E214AD497004A3C4D /* Frameworks */,
 				CB867C5F214AD497004A3C4D /* Resources */,
 				CB0BD2DD214C2B67003F48C5 /* Embed Frameworks */,
+				CB01691321625C7B007E7312 /* Swiftlint Script */,
+				CB01691421625C92007E7312 /* TODO Script */,
 			);
 			buildRules = (
 			);
@@ -284,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB867C6F214AD498004A3C4D /* LaunchScreen.storyboard in Resources */,
+				CB8F02BE21625A61006BC22A /* Frameworks.txt in Resources */,
 				CB867C6C214AD498004A3C4D /* Assets.xcassets in Resources */,
 				CB867C6A214AD497004A3C4D /* Main.storyboard in Resources */,
 			);
@@ -304,6 +342,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB01691321625C7B007E7312 /* Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		CB01691421625C92007E7312 /* TODO Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "TODO Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:\"\nfind \"${SRCROOT}/NASA-with-VIPER\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB867C5D214AD497004A3C4D /* Sources */ = {

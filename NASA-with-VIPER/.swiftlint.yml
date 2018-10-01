@@ -1,0 +1,69 @@
+disabled_rules: # rule identifiers to exclude from running
+  - colon
+  - comma
+  - control_statement
+  - todo
+  - cyclomatic_complexity
+  - trailing_whitespace
+  - missing_docs
+  - legacy_constructor
+  - identifier_name
+  - multiple_closures_with_trailing_closure
+  - discouraged_direct_init
+  - syntactic_sugar
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  - missing_docs
+  # Find all the available rules by running:
+  # swiftlint rules
+included: # paths to include during linting. `--path` is ignored if present.
+   - NASA-with-VIPER
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length:
+  warning: 250
+  error: 300
+# rules for tuplas
+large_tuple:
+ warning: 4
+ error: 5
+# they can set both implicitly with an array
+type_body_length:
+  - 650 # warning
+  - 750 # error
+# or they can set both explicitly
+file_length:
+  warning: 650
+  error: 750
+# config for function name and paramethers length
+function_body_length:
+  warning: 300
+  error: 325
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 45
+    error: 50
+  excluded: iPhone # excluded via string
+identifier_name:
+  max_length:
+    warning: 45
+    error: 50
+  min_length:
+    warning: 1
+  excluded: # excluded via string array
+    - id
+    - URL
+    - GlobalAPIKey
+function_parameter_count: 15
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
