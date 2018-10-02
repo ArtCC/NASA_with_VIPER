@@ -20,7 +20,7 @@
 		CB39E9B7216266F2006DF2E8 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9B6216266F2006DF2E8 /* ListPresenter.swift */; };
 		CB39E9B9216266FC006DF2E8 /* ListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9B8216266FC006DF2E8 /* ListWireFrame.swift */; };
 		CB39E9BF21626725006DF2E8 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9BE21626725006DF2E8 /* APIConstants.swift */; };
-		CB39E9C2216268CF006DF2E8 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C1216268CF006DF2E8 /* DataRepository.swift */; };
+		CB39E9C2216268CF006DF2E8 /* ImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C1216268CF006DF2E8 /* ImagesRepository.swift */; };
 		CB39E9C4216268E9006DF2E8 /* ImagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C3216268E9006DF2E8 /* ImagesInteractor.swift */; };
 		CB39E9C721627668006DF2E8 /* NASAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C621627668006DF2E8 /* NASAImage.swift */; };
 		CB39E9C9216279D6006DF2E8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9C8216279D6006DF2E8 /* Utils.swift */; };
@@ -38,6 +38,9 @@
 		CBC27EA9216297B300316D85 /* DetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC27EA8216297B300316D85 /* DetailWireFrame.swift */; };
 		CBC27EAB2162B4E000316D85 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC27EAA2162B4E000316D85 /* Links.swift */; };
 		CBC27EAF2162B52B00316D85 /* DataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC27EAE2162B52B00316D85 /* DataInfo.swift */; };
+		CBF905902163AE0000811D23 /* VideosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF9058F2163AE0000811D23 /* VideosInteractor.swift */; };
+		CBF905922163AF5300811D23 /* VideosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF905912163AF5300811D23 /* VideosRepository.swift */; };
+		CBF905952163B14F00811D23 /* GeneralWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF905942163B14F00811D23 /* GeneralWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +87,7 @@
 		CB39E9B6216266F2006DF2E8 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		CB39E9B8216266FC006DF2E8 /* ListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireFrame.swift; sourceTree = "<group>"; };
 		CB39E9BE21626725006DF2E8 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		CB39E9C1216268CF006DF2E8 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		CB39E9C1216268CF006DF2E8 /* ImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepository.swift; sourceTree = "<group>"; };
 		CB39E9C3216268E9006DF2E8 /* ImagesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesInteractor.swift; sourceTree = "<group>"; };
 		CB39E9C621627668006DF2E8 /* NASAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAImage.swift; sourceTree = "<group>"; };
 		CB39E9C8216279D6006DF2E8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -108,6 +111,9 @@
 		CBC27EA8216297B300316D85 /* DetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireFrame.swift; sourceTree = "<group>"; };
 		CBC27EAA2162B4E000316D85 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		CBC27EAE2162B52B00316D85 /* DataInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInfo.swift; sourceTree = "<group>"; };
+		CBF9058F2163AE0000811D23 /* VideosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosInteractor.swift; sourceTree = "<group>"; };
+		CBF905912163AF5300811D23 /* VideosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosRepository.swift; sourceTree = "<group>"; };
+		CBF905942163B14F00811D23 /* GeneralWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralWireFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +196,8 @@
 			children = (
 				CB39E9BE21626725006DF2E8 /* APIConstants.swift */,
 				CBACD86B216379A700276AFA /* APIUtils.swift */,
-				CB39E9C1216268CF006DF2E8 /* DataRepository.swift */,
+				CB39E9C1216268CF006DF2E8 /* ImagesRepository.swift */,
+				CBF905912163AF5300811D23 /* VideosRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				CB39E9C3216268E9006DF2E8 /* ImagesInteractor.swift */,
+				CBF9058F2163AE0000811D23 /* VideosInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 			children = (
 				CB8F02BB21625A37006BC22A /* AppDelegate */,
 				CB39E9BA21626703006DF2E8 /* Commons */,
+				CBF905932163B13600811D23 /* General */,
 				CB39E9C021626746006DF2E8 /* Interactors */,
 				CB39E9C521626D8B006DF2E8 /* Models */,
 				CB39E9BD21626719006DF2E8 /* Repositories */,
@@ -312,6 +321,14 @@
 				CBC27EA8216297B300316D85 /* DetailWireFrame.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		CBF905932163B13600811D23 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				CBF905942163B14F00811D23 /* GeneralWireFrame.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,18 +512,21 @@
 				CBC27EA52162979F00316D85 /* DetailViewController.swift in Sources */,
 				CBC27EA9216297B300316D85 /* DetailWireFrame.swift in Sources */,
 				CB39E9B9216266FC006DF2E8 /* ListWireFrame.swift in Sources */,
+				CBF905922163AF5300811D23 /* VideosRepository.swift in Sources */,
 				CB39E9C4216268E9006DF2E8 /* ImagesInteractor.swift in Sources */,
 				CBACD86C216379A700276AFA /* APIUtils.swift in Sources */,
 				CBC27EAF2162B52B00316D85 /* DataInfo.swift in Sources */,
 				CB23A051216360A9002D5569 /* NASAInfoViewCell.swift in Sources */,
 				CB39E9BF21626725006DF2E8 /* APIConstants.swift in Sources */,
+				CBF905902163AE0000811D23 /* VideosInteractor.swift in Sources */,
 				CBC27EAB2162B4E000316D85 /* Links.swift in Sources */,
+				CBF905952163B14F00811D23 /* GeneralWireFrame.swift in Sources */,
 				CB867C67214AD497004A3C4D /* ListViewController.swift in Sources */,
 				CB39E9C9216279D6006DF2E8 /* Utils.swift in Sources */,
 				CB39E9C721627668006DF2E8 /* NASAImage.swift in Sources */,
 				CB39E9B7216266F2006DF2E8 /* ListPresenter.swift in Sources */,
 				CB867C65214AD497004A3C4D /* AppDelegate.swift in Sources */,
-				CB39E9C2216268CF006DF2E8 /* DataRepository.swift in Sources */,
+				CB39E9C2216268CF006DF2E8 /* ImagesRepository.swift in Sources */,
 				CBC27EA7216297A800316D85 /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

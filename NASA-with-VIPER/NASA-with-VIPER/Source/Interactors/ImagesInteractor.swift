@@ -15,7 +15,7 @@ protocol ImagesInteractorInputProtocol: class {
     // Funciones de entrada que van del presenter al interactor
     
     var presenter: ImagesInteractorOutputProtocol? { get set}
-    var dataRepository: DataRepositoryInputProtocol? { get set}
+    var imagesRepository: ImagesRepositoryInputProtocol? { get set}
     
     func findImagesList()
 }
@@ -32,17 +32,17 @@ protocol ImagesInteractorOutputProtocol: class {
 
 class ImagesInteractor: ImagesInteractorInputProtocol {
     weak var presenter: ImagesInteractorOutputProtocol?
-    var dataRepository: DataRepositoryInputProtocol?
+    var imagesRepository: ImagesRepositoryInputProtocol?
     
     // Implementations for input functions from presenter to interactor
     // Implementación de las funciones de entrada que van desde el presenter al interactor
     
     func findImagesList() {
-        self.dataRepository?.getImagesListRequest()
+        self.imagesRepository?.getImagesListRequest()
     }
 }
 
-extension ImagesInteractor: DataRepositoryOutputProtocol {
+extension ImagesInteractor: ImagesRepositoryOutputProtocol {
     // Implementations for output functions from repository to interactor
     // Implementación de las funciones de salida que van desde el repositorio al interactor
     

@@ -1,5 +1,5 @@
 //
-//  DataRepository.swift
+//  ImagesRepository.swift
 //  NASA-with-VIPER
 //
 //  Created by Arturo Carretero Calvo on 01/10/2018.
@@ -12,8 +12,8 @@ import AlamofireObjectMapper
 
 // MARK: - Protocols
 
-protocol DataRepositoryInputProtocol: class {
-    var dataRequestHandler: DataRepositoryOutputProtocol? { get set }
+protocol ImagesRepositoryInputProtocol: class {
+    var imagesRequestHandler: ImagesRepositoryOutputProtocol? { get set }
     
     // Input functions from interactor to repository
     // Funciones de entrada que van desde el interactor al repositorio
@@ -21,7 +21,7 @@ protocol DataRepositoryInputProtocol: class {
     func getImagesListRequest()
 }
 
-protocol DataRepositoryOutputProtocol: class {
+protocol ImagesRepositoryOutputProtocol: class {
     // Output functions from repository to interactor
     // Funciones de salida que van desde el repositorio al interactor
     
@@ -31,8 +31,8 @@ protocol DataRepositoryOutputProtocol: class {
 
 // MARK: - Class
 
-class DataRepository: DataRepositoryInputProtocol {
-    var dataRequestHandler: DataRepositoryOutputProtocol?
+class ImagesRepository: ImagesRepositoryInputProtocol {
+    var imagesRequestHandler: ImagesRepositoryOutputProtocol?
     
     // Implementations for input functions from interactor to repository
     // Implementación de las funciones de entrada que van desde el interactor al repositorio
@@ -55,7 +55,7 @@ class DataRepository: DataRepositoryInputProtocol {
                         let collection: [String : Any] = json["collection"] as? [String : Any],
                         let items: [[String : Any]] = collection["items"] as? [[String : Any]] else {
                             
-                            if let drh = self.dataRequestHandler {
+                            if let drh = self.imagesRequestHandler {
                                 
                                 drh.onError()
                             }
@@ -73,10 +73,10 @@ class DataRepository: DataRepositoryInputProtocol {
                         }
                     }
                     
-                    self.dataRequestHandler?.foundImagesList(images: imagesFromNASA)
+                    self.imagesRequestHandler?.foundImagesList(images: imagesFromNASA)
                 } else {
                     
-                    self.dataRequestHandler?.onError()
+                    self.imagesRequestHandler?.onError()
                 }
         }
     }

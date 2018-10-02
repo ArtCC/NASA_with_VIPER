@@ -13,8 +13,10 @@ import UIKit
 protocol ListPresenterInputProtocol: class {
     var view: ListViewControllerInputProtocol? { get set }
     var imagesInteractor: ImagesInteractorInputProtocol? { get set }
+    var videosInteractor: VideosInteractorInputProtocol? { get set }
     var wireFrame: ListWireFrameInputProtocol? { get set }
-    
+    var generalWireFrame: GeneralWireFrameInputProtocol? { get set }
+
     // Input functions from view to presenter
     // Funciones de entrada que van desde la vista al presenter
     
@@ -27,7 +29,9 @@ protocol ListPresenterInputProtocol: class {
 class ListPresenter: ListPresenterInputProtocol {
     weak var view: ListViewControllerInputProtocol?
     var imagesInteractor: ImagesInteractorInputProtocol?
+    var videosInteractor: VideosInteractorInputProtocol?
     var wireFrame: ListWireFrameInputProtocol?
+    var generalWireFrame: GeneralWireFrameInputProtocol?
     
     // Implementations for input functions from view to presenter
     // Implementación de las funciones de entrada que van desde la vista hasta el presenter
@@ -45,7 +49,7 @@ class ListPresenter: ListPresenterInputProtocol {
     }
 }
 
-extension ListPresenter: ImagesInteractorOutputProtocol {
+extension ListPresenter: ImagesInteractorOutputProtocol, VideosInteractorOutputProtocol {
     // Implementations for output functions from interactor to presenter
     // Implementación de las funciones de salida que van desde el interactor hasta el presenter
 

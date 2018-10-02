@@ -30,18 +30,35 @@ class ListWireFrame: ListWireFrameInputProtocol {
         
         if let view = navController.children.first as? ListViewController {
             
-            let presenter: ListPresenterInputProtocol & ImagesInteractorOutputProtocol = ListPresenter()
-            let imagesInteractor: ImagesInteractorInputProtocol & DataRepositoryOutputProtocol = ImagesInteractor()
-            let dataRepository: DataRepositoryInputProtocol = DataRepository()
+            /**
+             * In this module two interactors are implemented because it could have two or more different use cases.
+               You can implement as many interactors with your use cases as necessary.
+             * En este módulo se implementan dos interactors porque podría tener dos o más casos de uso diferentes.
+               Se pueden implementar tantos interactors con sus casos de uso como sea necesario.
+             */
+            
+            let presenter: ListPresenterInputProtocol & ImagesInteractorOutputProtocol & VideosInteractorOutputProtocol = ListPresenter()
+            let imagesInteractor: ImagesInteractorInputProtocol & ImagesRepositoryOutputProtocol = ImagesInteractor()
+            let videosInteractor: VideosInteractorInputProtocol & VideosRepositoryOutputProtocol = VideosInteractor()
+            let imagesRepository: ImagesRepositoryInputProtocol = ImagesRepository()
+            let videosRepository: VideosRepositoryInputProtocol = VideosRepository()
             let wireFrame: ListWireFrameInputProtocol = ListWireFrame()
+            let generalWireFrame: GeneralWireFrame = GeneralWireFrame()
             
             view.presenter = presenter
+            
             presenter.view = view
             presenter.wireFrame = wireFrame
+            presenter.generalWireFrame = generalWireFrame
             presenter.imagesInteractor = imagesInteractor
+            presenter.videosInteractor = videosInteractor
+            
             imagesInteractor.presenter = presenter
-            imagesInteractor.dataRepository = dataRepository
-            dataRepository.dataRequestHandler = imagesInteractor
+            imagesInteractor.imagesRepository = imagesRepository
+            videosInteractor.videoRepository = videosRepository
+            
+            imagesRepository.imagesRequestHandler = imagesInteractor
+            videosRepository.videosRequestHandler = videosInteractor
             
             return navController
         }

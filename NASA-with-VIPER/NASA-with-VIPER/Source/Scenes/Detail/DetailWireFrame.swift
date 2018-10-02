@@ -32,6 +32,7 @@ class DetailWireFrame: DetailWireFrameInputProtocol {
             let wireFrame: DetailWireFrameInputProtocol = DetailWireFrame()
             
             view.presenter = presenter
+            
             presenter.view = view
             presenter.wireFrame = wireFrame
             presenter.NASAImage = image
