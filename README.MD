@@ -2,7 +2,7 @@
 
 #### This project is in progress...
 
-#### For this project I use NASA Open APIs: [NASA Open APIs site](https://api.nasa.gov/index.html). You can create one :)
+#### For this project I use NASA Open APIs: [NASA Open APIs site](https://api.nasa.gov/index.html). You can create one but for this example isn't necessary :)
 
 This project is an example of VIPER architecture on iOS app with Swift.
 
@@ -15,6 +15,10 @@ This project is an example of VIPER architecture on iOS app with Swift.
 - I use Swiftlint for guide style:
 
 	<b>brew install swiftlint</b>
+	
+### Explication
+
+In progress...
 
 ### LICENSE
 

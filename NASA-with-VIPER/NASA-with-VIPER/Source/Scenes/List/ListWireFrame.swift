@@ -24,7 +24,7 @@ class ListWireFrame: ListWireFrameInputProtocol {
     class func createListModule() -> UIViewController {
         let navController = Utils.mainStoryboard.instantiateViewController(withIdentifier: "NavigationListViewController")
         
-        if let view = navController.childViewControllers.first as? ListViewController {
+        if let view = navController.children.first as? ListViewController {
             
             let presenter: ListPresenterInputProtocol & ImagesInteractorOutputProtocol = ListPresenter()
             let imagesInteractor: ImagesInteractorInputProtocol & DataRepositoryOutputProtocol = ImagesInteractor()
