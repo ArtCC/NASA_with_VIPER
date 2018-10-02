@@ -12,7 +12,8 @@ import UIKit
 
 protocol DetailWireFrameInputProtocol: class {
     // Input functions from presenter to wireframe
-    
+    // Funciones de entrada que van desde el presenter al wireframe
+
     static func createDetailModule(withImage image: NASAImage) -> UIViewController
 }
 
@@ -20,7 +21,8 @@ protocol DetailWireFrameInputProtocol: class {
 
 class DetailWireFrame: DetailWireFrameInputProtocol {
     // Implementations for input functions from presenter to wireframe
-    
+    // Implementación de las funciones de entrada que van desde el presenter al wireframe
+
     class func createDetailModule(withImage image: NASAImage) -> UIViewController {
         let viewController = Utils.mainStoryboard.instantiateViewController(withIdentifier: "DetailViewController")
         

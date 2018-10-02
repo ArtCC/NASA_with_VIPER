@@ -11,9 +11,14 @@ import UIKit
 // MARK: - Protocols
 
 protocol DetailViewControllerInputProtocol: class {
-    // Input functions from presenter to view
-    
     var presenter: DetailPresenterInputProtocol? { get set }
+    
+    // Input functions from presenter to view
+    // Funciones de entrada que van desde el presenter a la vista
+    
+    func showData(imageData: NASAImage)
+    func showImage(image: UIImage)
+    func hiddenActivityIndicatorInImage(hidden: Bool)
 }
 
 // MARK: - Class
@@ -23,7 +28,11 @@ class DetailViewController: UIViewController {
     
     var presenter: DetailPresenterInputProtocol?
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var NASAImageView: UIImageView!
+    @IBOutlet weak var titleImage: UILabel!
+    @IBOutlet weak var descriptionImage: UILabel!
+    @IBOutlet weak var dateImage: UILabel!
     
     // MARK: - View life cycle
     
@@ -36,4 +45,31 @@ class DetailViewController: UIViewController {
 
 extension DetailViewController: DetailViewControllerInputProtocol {
     // Implementations for input functions from presenter to view
+    // Implementación de las funciones de entrada que van desde el presenter a la vista
+    
+    func showData(imageData: NASAImage) {
+        
+        if let d = imageData.dataCollection,
+            let df = d.first,
+            let di = df.description508 {
+            
+            if let t = df.title,
+                let dc = df.dateCreated {
+                
+                self.titleImage.text = t
+                self.dateImage.text = dc
+            }
+            
+            self.descriptionImage.text = di
+        }
+    }
+    
+    func showImage(image: UIImage) {
+        self.NASAImageView.image = image
+    }
+    
+    func hiddenActivityIndicatorInImage(hidden: Bool) {
+        hidden ? self.activityIndicatorView.stopAnimating() : self.activityIndicatorView.startAnimating()
+        self.activityIndicatorView.isHidden = hidden
+    }
 }

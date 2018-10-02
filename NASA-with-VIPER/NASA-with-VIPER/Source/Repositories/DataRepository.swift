@@ -16,12 +16,14 @@ protocol DataRepositoryInputProtocol: class {
     var dataRequestHandler: DataRepositoryOutputProtocol? { get set }
     
     // Input functions from interactor to repository
+    // Funciones de entrada que van desde el interactor al repositorio
     
     func getImagesListRequest()
 }
 
 protocol DataRepositoryOutputProtocol: class {
     // Output functions from repository to interactor
+    // Funciones de salida que van desde el repositorio al interactor
     
     func foundImagesList(images: [NASAImage])
     func onError()
@@ -33,6 +35,7 @@ class DataRepository: DataRepositoryInputProtocol {
     var dataRequestHandler: DataRepositoryOutputProtocol?
     
     // Implementations for input functions from interactor to repository
+    // Implementación de las funciones de entrada que van desde el interactor al repositorio
     
     func getImagesListRequest() {
         let urlParams = [

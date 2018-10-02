@@ -11,10 +11,12 @@ import UIKit
 // MARK: - Protocols
 
 protocol ListViewControllerInputProtocol: class {
-    // Input functions from presenter to view
-
     var presenter: ListPresenterInputProtocol? { get set }
     
+    // Input functions from presenter to view
+    // Funciones de entrada que van desde el presenter a la vista
+    
+    func hiddenActivityIndicatorAndShowTableView()
     func showImages(NASADataImages: [NASAImage])
 }
 
@@ -29,20 +31,36 @@ class ListViewController: UIViewController {
     let kHeightForCell: CGFloat = 100.0
     
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+
     // MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.presenter?.viewDidLoad()
+        self.title = "VIPER"
         
+        self.activityIndicatorView.startAnimating()
+        
+        self.tableView.alpha = 0.0
         self.tableView.tableFooterView = UIView()
+        
+        self.presenter?.viewDidLoad()
     }
 }
 
 extension ListViewController: ListViewControllerInputProtocol {
     // Implementations for input functions from presenter to view
+    // Implementación de las funciones de entrada que van desde el presenter a la vista
+
+    func hiddenActivityIndicatorAndShowTableView() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.tableView.alpha = 1.0
+            self.activityIndicatorView.alpha = 0.0
+        }) { (_) in
+            self.activityIndicatorView.stopAnimating()
+        }
+    }
     
     func showImages(NASADataImages: [NASAImage]) {
         self.NASADataImages = NASADataImages

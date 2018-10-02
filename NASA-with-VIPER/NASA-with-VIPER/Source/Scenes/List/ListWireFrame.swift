@@ -12,6 +12,7 @@ import UIKit
 
 protocol ListWireFrameInputProtocol: class {
     // Input functions from presenter to wireframe
+    // Funciones de entrada que van desde el presenter al wireframe
 
     static func createListModule() -> UIViewController
     
@@ -22,6 +23,7 @@ protocol ListWireFrameInputProtocol: class {
 
 class ListWireFrame: ListWireFrameInputProtocol {
     // Implementations for input functions from presenter to wireframe
+    // Implementación de las funciones de entrada que van desde el presenter al wireframe
 
     class func createListModule() -> UIViewController {
         let navController = Utils.mainStoryboard.instantiateViewController(withIdentifier: "NavigationListViewController")
