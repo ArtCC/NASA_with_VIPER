@@ -50,17 +50,26 @@ extension DetailViewController: DetailViewControllerInputProtocol {
     func showData(imageData: NASAImage) {
         
         if let d = imageData.dataCollection,
-            let df = d.first,
-            let di = df.description508 {
+            let df = d.first {
             
             if let t = df.title,
                 let dc = df.dateCreated {
                 
                 self.titleImage.text = t
                 self.dateImage.text = dc
+            } else {
+                
+                self.titleImage.isHidden = true
+                self.dateImage.isHidden = true
             }
             
-            self.descriptionImage.text = di
+            if let di = df.description508 {
+                
+                self.descriptionImage.text = di
+            } else {
+                
+                self.descriptionImage.isHidden = true
+            }
         }
     }
     

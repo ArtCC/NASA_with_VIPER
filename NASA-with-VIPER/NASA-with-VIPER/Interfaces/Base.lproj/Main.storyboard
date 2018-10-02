@@ -50,7 +50,6 @@
                     <connections>
                         <outlet property="activityIndicatorView" destination="hqE-NY-H3j" id="UTV-xc-WCZ"/>
                         <outlet property="tableView" destination="dyl-SG-mWR" id="zt0-hk-gLJ"/>
-                        <segue destination="JKE-g7-X0m" kind="show" identifier="showDetail" id="Wtl-MO-5hp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,19 +65,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z5I-Q0-zh0">
-                                <rect key="frame" x="37" y="84" width="300" height="300"/>
+                                <rect key="frame" x="37" y="40" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Z5I-Q0-zh0" secondAttribute="height" multiplier="1:1" id="Tjj-ZS-k7X"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUO-Kw-YP9">
-                                <rect key="frame" x="37" y="404" width="300" height="20.5"/>
+                                <rect key="frame" x="37" y="360" width="300" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuD-i9-oZx">
-                                <rect key="frame" x="37" y="432.5" width="300" height="20.5"/>
+                                <rect key="frame" x="37" y="388.5" width="300" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -90,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ib0-ci-Eo2">
-                                <rect key="frame" x="169" y="216" width="37" height="37"/>
+                                <rect key="frame" x="169" y="172" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="bLG-gr-MlH"/>
                                     <constraint firstAttribute="height" constant="37" id="ow3-IQ-GN0"/>
