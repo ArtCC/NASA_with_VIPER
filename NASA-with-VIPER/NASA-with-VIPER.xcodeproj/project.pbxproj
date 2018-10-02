@@ -32,6 +32,7 @@
 		CB867C7A214AD498004A3C4D /* NASA_with_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C79214AD498004A3C4D /* NASA_with_VIPERTests.swift */; };
 		CB867C85214AD498004A3C4D /* NASA_with_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB867C84214AD498004A3C4D /* NASA_with_VIPERUITests.swift */; };
 		CB8F02BE21625A61006BC22A /* Frameworks.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB8F02BD21625A61006BC22A /* Frameworks.txt */; };
+		CBACD86C216379A700276AFA /* APIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBACD86B216379A700276AFA /* APIUtils.swift */; };
 		CBC27EA52162979F00316D85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC27EA42162979F00316D85 /* DetailViewController.swift */; };
 		CBC27EA7216297A800316D85 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC27EA6216297A800316D85 /* DetailPresenter.swift */; };
 		CBC27EA9216297B300316D85 /* DetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC27EA8216297B300316D85 /* DetailWireFrame.swift */; };
@@ -101,6 +102,7 @@
 		CB867C84214AD498004A3C4D /* NASA_with_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_with_VIPERUITests.swift; sourceTree = "<group>"; };
 		CB867C86214AD498004A3C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB8F02BD21625A61006BC22A /* Frameworks.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Frameworks.txt; sourceTree = "<group>"; };
+		CBACD86B216379A700276AFA /* APIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUtils.swift; sourceTree = "<group>"; };
 		CBC27EA42162979F00316D85 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CBC27EA6216297A800316D85 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		CBC27EA8216297B300316D85 /* DetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireFrame.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				CB39E9BE21626725006DF2E8 /* APIConstants.swift */,
+				CBACD86B216379A700276AFA /* APIUtils.swift */,
 				CB39E9C1216268CF006DF2E8 /* DataRepository.swift */,
 			);
 			path = Repositories;
@@ -493,6 +496,7 @@
 				CBC27EA9216297B300316D85 /* DetailWireFrame.swift in Sources */,
 				CB39E9B9216266FC006DF2E8 /* ListWireFrame.swift in Sources */,
 				CB39E9C4216268E9006DF2E8 /* ImagesInteractor.swift in Sources */,
+				CBACD86C216379A700276AFA /* APIUtils.swift in Sources */,
 				CBC27EAF2162B52B00316D85 /* DataInfo.swift in Sources */,
 				CB23A051216360A9002D5569 /* NASAInfoViewCell.swift in Sources */,
 				CB39E9BF21626725006DF2E8 /* APIConstants.swift in Sources */,

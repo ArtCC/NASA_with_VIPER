@@ -40,7 +40,9 @@ class DataRepository: DataRepositoryInputProtocol {
             "media_type" : "image"
         ]
         
-        Alamofire.request(APIConstants.urlForSearch, method: .get, parameters: urlParams)
+        let urlString: String = APIConstants.urlBase + APIConstants.urlForSearch
+        
+        Alamofire.request(urlString, method: .get, parameters: urlParams)
             .validate(statusCode: 200..<300)
             .responseJSON { response in
                 

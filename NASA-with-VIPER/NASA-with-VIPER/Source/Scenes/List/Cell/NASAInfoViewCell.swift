@@ -24,8 +24,8 @@ class NASAInfoViewCell: UITableViewCell {
         let cellIdentifier = "NASAInfoViewCellIdentifier"
         
         guard let cell = Bundle.main.loadNibNamed("NASAInfoViewCell", owner: self, options: nil)?[0] as? NASAInfoViewCell else {
-                
-                return NASAInfoViewCell()
+            
+            return NASAInfoViewCell()
         }
         
         tableView.register(UINib(nibName: "NASAInfoViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
@@ -38,7 +38,7 @@ class NASAInfoViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     // MARK: - Config
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -51,13 +51,32 @@ class NASAInfoViewCell: UITableViewCell {
         self.activityIndicatorView.startAnimating()
         
         if let d = image.dataCollection,
-            let df = d.first {
+            let df = d.first,
+            let l = image.links,
+            let h = l.first?.href {
             
             if let t = df.title,
                 let dc = df.dateCreated {
                 
                 self.title.text = t
                 self.imageDate.text = dc
+            }
+            
+            APIUtils.getImageWithURL(imageURLString: h) { (image) in
+                
+                self.activityIndicatorView.stopAnimating()
+                
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.activityIndicatorView.alpha = 0.0
+                })
+                
+                if let i = image {
+                    
+                    self.iconImage.image = i
+                } else {
+                    
+                    self.iconImage.image = UIImage(named: "vehicle")
+                }
             }
         }
     }
