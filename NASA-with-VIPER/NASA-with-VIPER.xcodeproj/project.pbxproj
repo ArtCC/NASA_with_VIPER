@@ -15,6 +15,8 @@
 		CB01691021625C3F007E7312 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690321625C36007E7312 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB01691121625C3F007E7312 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690621625C36007E7312 /* ObjectMapper.framework */; };
 		CB01691221625C3F007E7312 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB01690621625C36007E7312 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB23A051216360A9002D5569 /* NASAInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23A04F216360A9002D5569 /* NASAInfoViewCell.swift */; };
+		CB23A052216360A9002D5569 /* NASAInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB23A050216360A9002D5569 /* NASAInfoViewCell.xib */; };
 		CB39E9B7216266F2006DF2E8 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9B6216266F2006DF2E8 /* ListPresenter.swift */; };
 		CB39E9B9216266FC006DF2E8 /* ListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9B8216266FC006DF2E8 /* ListWireFrame.swift */; };
 		CB39E9BF21626725006DF2E8 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB39E9BE21626725006DF2E8 /* APIConstants.swift */; };
@@ -76,6 +78,8 @@
 		CB01690421625C36007E7312 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		CB01690521625C36007E7312 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
 		CB01690621625C36007E7312 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		CB23A04F216360A9002D5569 /* NASAInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAInfoViewCell.swift; sourceTree = "<group>"; };
+		CB23A050216360A9002D5569 /* NASAInfoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NASAInfoViewCell.xib; sourceTree = "<group>"; };
 		CB39E9B6216266F2006DF2E8 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		CB39E9B8216266FC006DF2E8 /* ListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWireFrame.swift; sourceTree = "<group>"; };
 		CB39E9BE21626725006DF2E8 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -151,9 +155,19 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		CB23A04E2163608E002D5569 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CB23A04F216360A9002D5569 /* NASAInfoViewCell.swift */,
+				CB23A050216360A9002D5569 /* NASAInfoViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		CB39E9B5216266D6006DF2E8 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				CB23A04E2163608E002D5569 /* Cell */,
 				CB867C66214AD497004A3C4D /* ListViewController.swift */,
 				CB39E9B6216266F2006DF2E8 /* ListPresenter.swift */,
 				CB39E9B8216266FC006DF2E8 /* ListWireFrame.swift */,
@@ -407,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB23A052216360A9002D5569 /* NASAInfoViewCell.xib in Resources */,
 				CB867C6F214AD498004A3C4D /* LaunchScreen.storyboard in Resources */,
 				CB8F02BE21625A61006BC22A /* Frameworks.txt in Resources */,
 				CB867C6C214AD498004A3C4D /* Assets.xcassets in Resources */,
@@ -479,6 +494,7 @@
 				CB39E9B9216266FC006DF2E8 /* ListWireFrame.swift in Sources */,
 				CB39E9C4216268E9006DF2E8 /* ImagesInteractor.swift in Sources */,
 				CBC27EAF2162B52B00316D85 /* DataInfo.swift in Sources */,
+				CB23A051216360A9002D5569 /* NASAInfoViewCell.swift in Sources */,
 				CB39E9BF21626725006DF2E8 /* APIConstants.swift in Sources */,
 				CBC27EAB2162B4E000316D85 /* Links.swift in Sources */,
 				CB867C67214AD497004A3C4D /* ListViewController.swift in Sources */,

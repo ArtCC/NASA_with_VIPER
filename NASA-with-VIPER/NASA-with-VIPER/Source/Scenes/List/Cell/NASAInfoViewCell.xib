@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NASAInfoViewCellIdentifier" id="KGk-i7-Jjw" customClass="NASAInfoViewCell" customModule="NASA_with_VIPER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GwF-Ch-Xt5">
+                        <rect key="frame" x="16" y="9" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="oUl-VW-aB8"/>
+                            <constraint firstAttribute="width" constant="80" id="s1y-jv-38R"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-VY-wXw">
+                        <rect key="frame" x="104" y="20" width="255" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7d-GZ-rRY">
+                        <rect key="frame" x="104" y="48.5" width="255" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TGa-jO-HVW">
+                        <rect key="frame" x="46" y="39" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2Bw-O0-oKP"/>
+                            <constraint firstAttribute="width" constant="20" id="EsT-yJ-byo"/>
+                        </constraints>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x7d-GZ-rRY" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="8" id="7zY-ci-wKR"/>
+                    <constraint firstItem="jRo-VY-wXw" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="8" id="8C5-ou-jXf"/>
+                    <constraint firstItem="x7d-GZ-rRY" firstAttribute="top" secondItem="jRo-VY-wXw" secondAttribute="bottom" constant="8" id="9M8-F4-r0M"/>
+                    <constraint firstItem="GwF-Ch-Xt5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9kl-SA-UJA"/>
+                    <constraint firstAttribute="trailing" secondItem="jRo-VY-wXw" secondAttribute="trailing" constant="16" id="HFl-N1-L7J"/>
+                    <constraint firstAttribute="trailing" secondItem="x7d-GZ-rRY" secondAttribute="trailing" constant="16" id="QAM-X7-98P"/>
+                    <constraint firstItem="GwF-Ch-Xt5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="Qsx-9W-Ys6"/>
+                    <constraint firstAttribute="bottom" secondItem="GwF-Ch-Xt5" secondAttribute="bottom" constant="10.5" id="T7v-UH-Bb8"/>
+                    <constraint firstItem="TGa-jO-HVW" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="-50" id="bcV-5d-EJY"/>
+                    <constraint firstItem="TGa-jO-HVW" firstAttribute="top" secondItem="GwF-Ch-Xt5" secondAttribute="bottom" constant="-50" id="dD0-Q2-tM1"/>
+                    <constraint firstItem="jRo-VY-wXw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="rf4-yV-eG9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicatorView" destination="TGa-jO-HVW" id="RVI-Uc-z4d"/>
+                <outlet property="iconImage" destination="GwF-Ch-Xt5" id="lcX-ms-fvn"/>
+                <outlet property="imageDate" destination="x7d-GZ-rRY" id="dD8-qT-DcM"/>
+                <outlet property="title" destination="jRo-VY-wXw" id="OMd-Lk-eJZ"/>
+            </connections>
+            <point key="canvasLocation" x="-215.19999999999999" y="41.379310344827587"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -14,6 +14,8 @@ protocol ListWireFrameInputProtocol: class {
     // Input functions from presenter to wireframe
 
     static func createListModule() -> UIViewController
+    
+    func openDetailImage(from view: ListViewControllerInputProtocol, image: NASAImage)
 }
 
 // MARK: - Class

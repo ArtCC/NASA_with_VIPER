@@ -18,6 +18,8 @@ protocol ListPresenterInputProtocol: class {
     var wireFrame: ListWireFrameInputProtocol? { get set }
     
     func viewDidLoad()
+    
+    func userSelectedOption(image: NASAImage)
 }
 
 // MARK: - Class
@@ -30,13 +32,21 @@ class ListPresenter: ListPresenterInputProtocol {
     func viewDidLoad() {
         self.imagesInteractor?.findImagesList()
     }
+    
+    func userSelectedOption(image: NASAImage) {
+        
+        if let v = self.view {
+
+            self.wireFrame?.openDetailImage(from: v, image: image)
+        }
+    }
 }
 
 extension ListPresenter: ImagesInteractorOutputProtocol {
     // Implementations for input functions from interactor to presenter
 
     func foundImagesList(images: [NASAImage]) {
-        debugPrint("IMAGES COUNT: \(images.count)")
+        self.view?.showImages(NASADataImages: images)
     }
     
     func onError() {
