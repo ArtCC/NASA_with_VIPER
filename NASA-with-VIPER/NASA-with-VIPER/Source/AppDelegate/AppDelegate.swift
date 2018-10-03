@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Init instance for module
         // Crear instancia para el primer módulo que se muestra
-        let list = ListWireFrame.createListModule()
+        let list = ListWireFrame.createModule()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = list

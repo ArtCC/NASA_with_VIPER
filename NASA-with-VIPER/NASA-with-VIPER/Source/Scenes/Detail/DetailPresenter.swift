@@ -13,12 +13,14 @@ import UIKit
 protocol DetailPresenterInputProtocol: class {
     var view: DetailViewControllerInputProtocol? { get set }
     var wireFrame: DetailWireFrameInputProtocol? { get set }
+    var generalWireFrame: GeneralWireFrameInputProtocol? { get set }
     var NASAImage: NASAImage? { get set }
 
     // Input functions from view to presenter
     // Funciones de entrada que van desde la vista al presenter
     
     func viewDidLoad()
+    func showHelpModule()
 }
 
 // MARK: - Class
@@ -26,6 +28,7 @@ protocol DetailPresenterInputProtocol: class {
 class DetailPresenter: DetailPresenterInputProtocol {
     weak var view: DetailViewControllerInputProtocol?
     var wireFrame: DetailWireFrameInputProtocol?
+    var generalWireFrame: GeneralWireFrameInputProtocol?
     var NASAImage: NASAImage?
     
     // Implementations for input functions from view to presenter
@@ -55,6 +58,14 @@ class DetailPresenter: DetailPresenterInputProtocol {
                     }
                 }
             }
+        }
+    }
+    
+    func showHelpModule() {
+        
+        if let v = self.view {
+            
+            self.wireFrame?.openHelp(from: v)
         }
     }
 }

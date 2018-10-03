@@ -14,9 +14,10 @@ protocol ListWireFrameInputProtocol: class {
     // Input functions from presenter to wireframe
     // Funciones de entrada que van desde el presenter al wireframe
 
-    static func createListModule() -> UIViewController
+    static func createModule() -> UIViewController
     
     func openDetailImage(from view: ListViewControllerInputProtocol, image: NASAImage)
+    func openHelp(from view: ListViewControllerInputProtocol)
 }
 
 // MARK: - Class
@@ -25,7 +26,7 @@ class ListWireFrame: ListWireFrameInputProtocol {
     // Implementations for input functions from presenter to wireframe
     // Implementación de las funciones de entrada que van desde el presenter al wireframe
 
-    class func createListModule() -> UIViewController {
+    class func createModule() -> UIViewController {
         let navController = Utils.mainStoryboard.instantiateViewController(withIdentifier: "NavigationListViewController")
         
         if let view = navController.children.first as? ListViewController {
@@ -43,7 +44,7 @@ class ListWireFrame: ListWireFrameInputProtocol {
             let imagesRepository: ImagesRepositoryInputProtocol = ImagesRepository()
             let videosRepository: VideosRepositoryInputProtocol = VideosRepository()
             let wireFrame: ListWireFrameInputProtocol = ListWireFrame()
-            let generalWireFrame: GeneralWireFrame = GeneralWireFrame()
+            let generalWireFrame: GeneralWireFrameInputProtocol = GeneralWireFrame()
             
             view.presenter = presenter
             
@@ -67,11 +68,20 @@ class ListWireFrame: ListWireFrameInputProtocol {
     }
     
     func openDetailImage(from view: ListViewControllerInputProtocol, image: NASAImage) {
-        let detailViewController = DetailWireFrame.createDetailModule(withImage: image)
+        let detailViewController = DetailWireFrame.createModule(withImage: image)
         
         if let sourceView = view as? UIViewController {
             
             sourceView.navigationController?.pushViewController(detailViewController, animated: true)
+        }
+    }
+    
+    func openHelp(from view: ListViewControllerInputProtocol) {
+        let helpViewController = GeneralWireFrame.createHelpModule()
+        
+        if let sourceView = view as? UIViewController {
+            
+            sourceView.present(helpViewController, animated: true, completion: nil)
         }
     }
 }

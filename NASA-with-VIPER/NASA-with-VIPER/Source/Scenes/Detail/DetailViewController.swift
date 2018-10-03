@@ -39,7 +39,25 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.configView()
+        
         self.presenter?.viewDidLoad()
+    }
+    
+    // MARK: - Config
+    
+    func configView() {
+        self.title = "VIPER"
+
+        self.navigationController?.navigationBar.barTintColor = UIColor.lightGray
+        let rightItem = UIBarButtonItem(title: "Help", style: UIBarButtonItem.Style.plain, target: self, action: #selector(ListViewController.showHelp))
+        self.navigationItem.rightBarButtonItem = rightItem
+    }
+    
+    // MARK: - Actions
+    
+    @objc func showHelp(sender: UIBarButtonItem) {
+        self.presenter?.showHelpModule()
     }
 }
 

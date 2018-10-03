@@ -22,8 +22,8 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GwF-Ch-Xt5">
                         <rect key="frame" x="16" y="20" width="60" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="ANK-sl-0xH"/>
-                            <constraint firstAttribute="height" constant="60" id="Q0h-Bi-wxZ"/>
+                            <constraint firstAttribute="width" constant="60" id="ffe-sF-J40"/>
+                            <constraint firstAttribute="height" constant="60" id="t02-tu-c0i"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-VY-wXw">
@@ -41,25 +41,24 @@
                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TGa-jO-HVW">
                         <rect key="frame" x="36" y="39" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="20" id="k3u-Yu-84E"/>
-                            <constraint firstAttribute="height" constant="20" id="lGu-eg-0Zg"/>
+                            <constraint firstAttribute="width" constant="20" id="kK5-G6-UH6"/>
+                            <constraint firstAttribute="height" constant="20" id="m1o-oG-ueJ"/>
                         </constraints>
                         <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </activityIndicatorView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="x7d-GZ-rRY" secondAttribute="trailing" constant="16" id="5km-Qp-RdN"/>
-                    <constraint firstItem="GwF-Ch-Xt5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="J3Q-iu-Vsc"/>
-                    <constraint firstItem="x7d-GZ-rRY" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="8" id="MDM-Nb-HrB"/>
-                    <constraint firstItem="jRo-VY-wXw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="U9S-WP-Xa9"/>
-                    <constraint firstAttribute="bottom" secondItem="GwF-Ch-Xt5" secondAttribute="bottom" constant="19.5" id="V4l-jP-er0"/>
-                    <constraint firstItem="jRo-VY-wXw" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="8" id="VGv-eg-CPO"/>
-                    <constraint firstItem="GwF-Ch-Xt5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dbd-LK-Slo"/>
-                    <constraint firstAttribute="trailing" secondItem="jRo-VY-wXw" secondAttribute="trailing" constant="16" id="hXi-gb-8aF"/>
-                    <constraint firstItem="TGa-jO-HVW" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="-40" id="lKu-6G-Ltk"/>
-                    <constraint firstItem="GwF-Ch-Xt5" firstAttribute="top" secondItem="TGa-jO-HVW" secondAttribute="bottom" constant="-39" id="nw2-ug-NsV"/>
-                    <constraint firstAttribute="bottom" secondItem="x7d-GZ-rRY" secondAttribute="bottom" priority="200" constant="20" id="peJ-0t-ueN"/>
-                    <constraint firstItem="x7d-GZ-rRY" firstAttribute="top" secondItem="jRo-VY-wXw" secondAttribute="bottom" constant="8.5" id="zbG-Cu-Z9N"/>
+                    <constraint firstItem="GwF-Ch-Xt5" firstAttribute="top" secondItem="TGa-jO-HVW" secondAttribute="bottom" constant="-39" id="1HI-oY-3G9"/>
+                    <constraint firstAttribute="trailing" secondItem="jRo-VY-wXw" secondAttribute="trailing" constant="16" id="34A-nw-rrZ"/>
+                    <constraint firstItem="x7d-GZ-rRY" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="8" id="5fm-aD-m1S"/>
+                    <constraint firstItem="TGa-jO-HVW" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="-40" id="9sY-SR-JUh"/>
+                    <constraint firstAttribute="trailing" secondItem="x7d-GZ-rRY" secondAttribute="trailing" constant="16" id="Gbb-Mj-fON"/>
+                    <constraint firstAttribute="bottom" secondItem="GwF-Ch-Xt5" secondAttribute="bottom" constant="19.5" id="HIK-Ya-Z92"/>
+                    <constraint firstItem="x7d-GZ-rRY" firstAttribute="top" secondItem="jRo-VY-wXw" secondAttribute="bottom" constant="8.5" id="LnP-OA-dno"/>
+                    <constraint firstItem="jRo-VY-wXw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="cGx-3S-JUp"/>
+                    <constraint firstItem="jRo-VY-wXw" firstAttribute="leading" secondItem="GwF-Ch-Xt5" secondAttribute="trailing" constant="8" id="maQ-3J-tNX"/>
+                    <constraint firstItem="GwF-Ch-Xt5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="n1g-TE-eO8"/>
+                    <constraint firstItem="GwF-Ch-Xt5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="999" constant="20" id="qgr-Lz-efn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -69,7 +68,7 @@
                 <outlet property="imageDate" destination="x7d-GZ-rRY" id="dD8-qT-DcM"/>
                 <outlet property="title" destination="jRo-VY-wXw" id="OMd-Lk-eJZ"/>
             </connections>
-            <point key="canvasLocation" x="-215.19999999999999" y="41.379310344827587"/>
+            <point key="canvasLocation" x="-836" y="53"/>
         </tableViewCell>
     </objects>
 </document>

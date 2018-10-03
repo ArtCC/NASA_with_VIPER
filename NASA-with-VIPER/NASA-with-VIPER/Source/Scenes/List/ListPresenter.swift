@@ -22,6 +22,7 @@ protocol ListPresenterInputProtocol: class {
     
     func viewDidLoad()
     func userSelectedOption(image: NASAImage)
+    func showHelpModule()
 }
 
 // MARK: - Class
@@ -45,6 +46,14 @@ class ListPresenter: ListPresenterInputProtocol {
         if let v = self.view {
 
             self.wireFrame?.openDetailImage(from: v, image: image)
+        }
+    }
+    
+    func showHelpModule() {
+        
+        if let v = self.view {
+            
+            self.wireFrame?.openHelp(from: v)
         }
     }
 }
