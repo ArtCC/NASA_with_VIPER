@@ -1,3 +1,7 @@
+New template with my actual VIPER:
+
+https://github.com/ArtCC/ViperModule
+
 ## Architecting iOS and macOS Apps with VIPER (application of Clean Architecture) with NASA Open APIs
 
 #### For this project I use NASA Open APIs: [NASA Open APIs site](https://api.nasa.gov/index.html). You can create one but for this example isn't necessary :)
